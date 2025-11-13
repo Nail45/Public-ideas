@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Заголовок страницы */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #222;
+}
+
+/* Контейнер для списка идей */
+.ideas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стиль отдельной идеи */
+.idea {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.idea:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок идеи */
+.idea-title {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Описание идеи */
+.idea-description {
+    margin: 0 0 10px;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Метаданные идеи: дата и автор */
+.idea-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Стиль для даты */
+.date {
+    font-style: italic;
+}
+
+/* Стиль для ссылки на автора */
+.author {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.author:hover {
+    color: #004999;
+}
+
+/* Контейнер пагинации */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+/* Стиль ссылок пагинации */
+.page-link {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #e0e0e0;
+}
+
+.page-link.active {
+    background-color: #0066cc;
+    color: #fff;
+    border-color: #0066cc;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .3
+}
