@@ -39,6 +39,3 @@ if (!empty($_SESSION['auth'])) {
     }
 
 }
-
-//$stmt = $pdo->prepare('UPDATE ideas SET title=:title,description=:description,
-//            created_at=:created_at,updated_at=:updated_at,user_id=:user_id WHERE id=:id');
